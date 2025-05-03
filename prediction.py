@@ -127,7 +127,7 @@ for i in range(0, len(events) // 3 * 3, 3):
         cron_year = Estdelivery_Time.year
         t_rise_str = t_rise.strftime('%Y-%m-%dT%H:%M:%S')
         # Create a new cron job
-        job = cron.new(command=f'cd' + user_home + '/tmp && ' + user_home + '/scripts/retrieve_jpss_products.py --satellite ' + SatShortName + ' --start '+ t_rise_str + ' --duration 15 --clean')
+        job = cron.new(command=f'cd ' + user_home + '/tmp && ' + user_home + '/scripts/retrieve_jpss_products.py --satellite ' + SatShortName + ' --start '+ t_rise_str + ' --duration 15 --clean')
         # Set the time for the cron job
         job.setall(f"{cron_minute} {cron_hour} {cron_day} {cron_month} *")
         # Write the cron job to the crontab
