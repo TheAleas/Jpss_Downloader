@@ -1,6 +1,8 @@
 # Version
 
-Version 1.0
+Version 1.1
+
+THIS DOCUMENTATION IS OUT OF DATE!
 
 # Requirements
 
